@@ -1,3 +1,11 @@
 #image-main {
-    
+    background-size: cover;
+    background-image: url('../img/kanyewest.jpg');
+    background-position: center;
+}
+
+#image-main > .container-fluid {
+    padding: 400px 0px;
+    text-align: center;
+    color: white;
 }
