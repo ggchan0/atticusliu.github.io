@@ -5,11 +5,15 @@
 }
 
 #image-main > .container-fluid {
-    padding: 500px 0px;
+    padding: 425px 0px;
     text-align: center;
     color: white;
 }
 
 .row {
     text-align: center;
+}
+
+.col-md-8 > .row {
+    padding: 10px;
 }
