@@ -1,3 +1,6 @@
+body {
+    font-family: "Hind";
+}
 #image-main {
     background-size: cover;
     background-image: url('../img/kanyewest.jpg');
@@ -7,6 +10,7 @@
 #image-main > .container-fluid {
     padding: 425px 0px;
     text-align: center;
+    font-family: 'Oswald';
     color: white;
 }
 
