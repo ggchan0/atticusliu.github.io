@@ -20,9 +20,29 @@ $("button").click(function(){
 
 // BAD CODE IS BAD, I KNOW
 
+/*
+$.get( "https://accounts.spotify.com/authorize", function (data) {
+  $( ".result").html( data );
+  alert( "Load was performed." );
+});
+*/
+
 $(document).ready(function(){
     if($("#happy").click(function(){
+
+      //SOMETHING IS VERY WRONG HERE
        alert("Kanye is happy");
+       $.ajax({
+         'url' : 'https://accounts.spotify.com/authorize',
+         'type' : 'GET',
+
+         'success' : function(data) {
+           if(data == "success") {
+             alert('request sent!');
+          }
+       }
+     )};
+
     }));
     if($("#mad").click(function(){
       alert("Kanye is mad");
